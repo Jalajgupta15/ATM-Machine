@@ -1,18 +1,18 @@
 #for stopping program execution for some time
 import time
 
-print("Please insert Your CARD")
+print("Please insert the CARD")
 
 #for card processing
 time.sleep(5)
 
-password = 1234
+password = 2468
 
 #taking atm pin from user
-pin = int(input("enter your atm pin "))
+pin = int(input("Kindly Enter your ATM pin "))
 
 #user account balance
-balance = 5000
+balance = 10000
 
 #checking pin is valid or not 
 if pin == password:
@@ -57,13 +57,13 @@ if pin == password:
 
         if option == 3:
 
-            deposit_amount = int(input("please enter deposit_amount"))
+            deposit_amount = int(input("please enter the deposit_amount"))
 
             balance = balance + deposit_amount
 
             
 
-            print(f"{deposit_amount} is credited to your account")
+            print(f"{deposit_amount} is successfully credited to your account")
 
 
 

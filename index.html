@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATM Transaction</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the ATM</h1>
+        <form id="atmForm">
+            <label for="pinInput">Enter ATM PIN:</label>
+            <input type="password" id="pinInput" name="pin" required>
+            <button type="button" onclick="processPIN()">Submit</button>
+        </form>
+
+        <div id="transactionOptions" style="display:none;">
+            <h2>Choose an option:</h2>
+            <button type="button" onclick="checkBalance()">Check Balance</button>
+            <button type="button" onclick="withdrawBalance()">Withdraw Balance</button>
+            <button type="button" onclick="depositBalance()">Deposit Balance</button>
+            <button type="button" onclick="exit()">Exit</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <p id="outputText"></p>
+            <button type="button" onclick="resetForm()">Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
